@@ -33,7 +33,7 @@ About 1.50 to 2.00 minutes on a standard laptop CPU (Stage 1). Most of the time 
 | Stage | Lab | Content | Commit |
 |---|---|---|---|
 | 1 | Lab 5 (Oct 22) | Data cleaning, EDA, split, baselines (Dummy, LR, SVM, KNN) | `1de973e` |
-| 2 | Lab 8 (Nov 12) | MLP, tree-based models, HPO on validation, model selection | TBD |
+| 2 | Lab 8 (Nov 12) | MLP, tree-based models, hyperparameter tuning on validation, model selection | TBD |
 | 3 | Lab 11 (Dec 3) | CNN, final test evaluation, analysis | TBD |
 
 ## Final commit
