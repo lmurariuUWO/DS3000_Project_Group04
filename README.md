@@ -1,4 +1,4 @@
-# DS3000 Project — Group 04: Plant Leaf Disease Classification
+# DS3000 Project - Group 04: Plant Leaf Disease Classification
 
 ## Problem
 Predict the plant/disease category of a leaf image using supervised multiclass image classification. Each observation is one image containing exactly one distinct annotated category. Images with no label or with multiple distinct categories are excluded.
@@ -24,16 +24,17 @@ pip install -r requirements.txt
 ## Run order
 1. Download the dataset and follow `data/README.md` for placement.
 2. Open `DS3000_Project_Group04.ipynb`.
-3. Kernel → Restart & Run All.
+3. Kernel $\rightarrow$ Restart & Run All.
+4. The Stage 2 finalist is saved to 'models/stage2_finalist.joblib' and checked by the smoke-test cell at the end. The file is not committed because of its size. Run the notebook to recreate it.
 
 ## Expected runtime
-About 1.50 to 2.00 minutes on a standard laptop CPU (Stage 1). Most of the time goes to image loading and feature extraction plus the SVM fit (about 20 s).
+About 30 to 35 minutes on a standard laptop CPU for the full notebook. Most of the time goes to the Stage 2 grid searches, especially AdaBoost (about 18 minutes) and XGBoost (about 6 minutes).
 
 ## Project stages
 | Stage | Lab | Content | Commit |
 |---|---|---|---|
-| 1 | Lab 5 (Oct 22) | Data cleaning, EDA, split, baselines (Dummy, LR, SVM, KNN) | `1de973e` |
-| 2 | Lab 8 (Nov 12) | MLP, tree-based models, hyperparameter tuning on validation, model selection | TBD |
+| 1 | Lab 5 (Oct 22) | Data cleaning, EDA, split, baselines (Dummy, LR, SVM, KNN) | `1de973e` (tag `stage1`) |
+| 2 | Lab 8 (Nov 12) | MLP, Random Forest, XGBoost, AdaBoost, hyperparameter tuning on validation, model selection (finalist: Random Forest) | tag `stage2` |
 | 3 | Lab 11 (Dec 3) | CNN, final test evaluation, analysis | TBD |
 
 ## Final commit
